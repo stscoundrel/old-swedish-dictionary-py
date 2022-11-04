@@ -16,7 +16,7 @@ isort = "*"
 [requires]
 
 [scripts]
-lint = "pipenv run flake8 . --count --max-complexity=10 --max-line-length=127 --statistics"
+lint = "pipenv run flake8 . --count --max-complexity=10 --max-line-length=127 --ignore=E501 --statistics"
 black-check = "black . --check"
 black-fix = "black ."
 isort = "isort src tests"
