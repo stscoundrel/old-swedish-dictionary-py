@@ -14,6 +14,35 @@ The project provides a getter for the whole dataset. You can use it in your scri
 
 Should you want to use the data without this Python library, you might want to check [Old Swedish Dictionary Builder](https://github.com/stscoundrel/old-swedish-dictionary-builder)
 
+```python
+
+from old_swedish_dictionary.dictionary import get_dictionary
+
+# Whole dictionary of +41 000 entries
+dictionary = get_dictionary()
+
+# Dictionaries return entries that consist of headword, part of speech and definition.
+print(dictionary[100].headword)           # af bränna
+print(dictionary[100].part_of_speech)     # vb
+print(dictionary[100].grammatical_aspect) # v.
+print(dictionary[100].definitions)        # ["afbränna, genom eld förstöra. hans trähws the af brendhe  [...and more]]
+
+```
+
+Individual words are returned in named tuple format of:
+
+```python
+# For type hint usage
+from old_swedish_dictionary.dictionary import DictionaryEntry
+
+{
+    headword: str
+    part_of_speech: str
+    grammatical_aspect: str
+    definitions: list[str]
+    alternative_forms: list[str]
+}
+```
 
 ### About "Dictionary of Old Swedish"
 
