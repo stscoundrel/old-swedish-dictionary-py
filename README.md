@@ -1,6 +1,6 @@
 # Old Swedish Dictionary
 
-Old Swedish Dictionary forPython. The dictionary consists of 40 000+ Old Swedish words with Swedish translations.
+Old Swedish Dictionary for Python. The dictionary consists of 40 000+ Old Swedish words with Swedish translations.
 
 Based on K.F. Söderwall's Medieval Swedish Dictionary
 
