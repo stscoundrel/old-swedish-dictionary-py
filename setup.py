@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="old-swedish-dictionary",
-    version="0.1.0",
+    version="1.0.0",
     author="stscoundrel",
     description="Old Swedish Dictionary for Python. From K.F. Söderwall's Medieval Swedish",
     long_description=long_description,
