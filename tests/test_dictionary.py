@@ -15,8 +15,9 @@ def test_dictionary_has_expected_content() -> None:
 
     expected_100 = DictionaryEntry(
         headword="af bränna",
-        part_of_speech="vb",
+        part_of_speech=["vb"],
         grammatical_aspect="v.",
+        information="",
         definitions=[
             "afbränna, genom eld förstöra. hans trähws the af brendhe  RK 2: 2757 . ib 1511. halff stadhen är affbrändh  BSH 5: 132 (  1506) . Jfr bränna af."
         ],
@@ -24,19 +25,21 @@ def test_dictionary_has_expected_content() -> None:
     )
     expected_1000 = DictionaryEntry(
         headword="annat thera",
-        part_of_speech="kn",
+        part_of_speech=["kn"],
         grammatical_aspect="konj.",
+        information="",
         definitions=[
-            " (eg. n. af annar i förening med gen. pl. af pron. thän) antingen. annat thera . . . älla, antingen . . . eller. annat thera skal jach felle thegh dödhan eller tu mik  Di 218 .  &quot; maa han i noghraa mattho wara annath thera gwdh eller man Lg 3: 108. &quot;"
+            ' (eg. n. af annar i förening med gen. pl. af pron. thän) antingen. annat thera . . . älla, antingen . . . eller. annat thera skal jach felle thegh dödhan eller tu mik  Di 218 .  " maa han i noghraa mattho wara annath thera gwdh eller man Lg 3: 108. "'
         ],
         alternative_forms=[],
     )
     expected_5000 = DictionaryEntry(
         headword="diost",
-        part_of_speech="nn",
+        part_of_speech=["nn"],
         grammatical_aspect="",
+        information="",
         definitions=[
-            "ridderlig tvekamp till häst. vid hvilken de stridande med lansarne angrepo hvarandra. Jfr Diez, Etym. Wörterb. 1: 216; Viollet-le-Duc, Dictionnarie du nobilier francais 2: 366 f.; Schultz. Höf. Leb. 2: 107, 110 f., samt Niedner, Das deutsche Turnier s. 38 f tornäy ok dyost  Iv 1560 .  ib 1847, 1962, 4213, (Cod. B. C) 948. ij torney ij diwst äller ok ij striidh  ib 3514 .  &quot; sik manleka brukande i dyysth ällar thorney &quot; Su 176 . ther mz thenna dost for gik ok torney burdhis riddirlik  Fr 1829 .  Va 52 .  &quot; ther war dust ok behordh &quot; RK 1: 3518 . riddara oc swena the giordho ther gaman mz diost oc bobordh  Iv 46 .  &quot; mz hoff oc danz oc leek oc diost &quot; MD 190 .  &quot; viisto riddara thera leek . . . mz dust at stangana gingo sönder &quot; RK 1: 1100 .  ib 1104 .  &quot; diwst at ridha &quot; Al 454 .  Fr 1671, 1719 .  RK 2: 196 .  Lg 3: 64 . rida i döst  Di 17 . ränna diost  Al 3865 .  ib 4751 . öfde ther dyst  RK 2: 5177 .  &quot; bruka . . . dwst ällar spärbräkningh &quot; Lg 3: 66 . - envig? som androm biwdher diwsth  SGGK 106 ."
+            'ridderlig tvekamp till häst. vid hvilken de stridande med lansarne angrepo hvarandra. Jfr Diez, Etym. Wörterb. 1: 216; Viollet-le-Duc, Dictionnarie du nobilier francais 2: 366 f.; Schultz. Höf. Leb. 2: 107, 110 f., samt Niedner, Das deutsche Turnier s. 38 f tornäy ok dyost  Iv 1560 .  ib 1847, 1962, 4213, (Cod. B. C) 948. ij torney ij diwst äller ok ij striidh  ib 3514 .  " sik manleka brukande i dyysth ällar thorney " Su 176 . ther mz thenna dost for gik ok torney burdhis riddirlik  Fr 1829 .  Va 52 .  " ther war dust ok behordh " RK 1: 3518 . riddara oc swena the giordho ther gaman mz diost oc bobordh  Iv 46 .  " mz hoff oc danz oc leek oc diost " MD 190 .  " viisto riddara thera leek . . . mz dust at stangana gingo sönder " RK 1: 1100 .  ib 1104 .  " diwst at ridha " Al 454 .  Fr 1671, 1719 .  RK 2: 196 .  Lg 3: 64 . rida i döst  Di 17 . ränna diost  Al 3865 .  ib 4751 . öfde ther dyst  RK 2: 5177 .  " bruka . . . dwst ällar spärbräkningh " Lg 3: 66 . - envig? som androm biwdher diwsth  SGGK 106 .'
         ],
         alternative_forms=[
             "dyost Iv 1560 . ",
@@ -54,8 +57,9 @@ def test_dictionary_has_expected_content() -> None:
     )
     expected_10000 = DictionaryEntry(
         headword="gangilse",
-        part_of_speech="nn",
+        part_of_speech=["nn"],
         grammatical_aspect="",
+        information="",
         definitions=[
             " ? Se Sdw 2: 1226. - Jfr fore-, fram-, ivir-, mote-, um-, vidher-gangilse."
         ],
@@ -63,10 +67,11 @@ def test_dictionary_has_expected_content() -> None:
     )
     expected_20000 = DictionaryEntry(
         headword="löna",
-        part_of_speech="vb",
+        part_of_speech=["vb"],
         grammatical_aspect="v.",
+        information="",
         definitions=[
-            "löna, vedergälla. &quot; med personens dat. och ack. betecknande det för hvilket lön gifves. minom och ack. betecknande det för hvilket lön gifves. minom winom lönir iak lydhno oc älskogha mz miskund &quot; MB 1: 332 . hånom hans gif löna  KS 70 (112, 77) . gudh löne henne sin stora kärlek  Lg 807 .  KL 296 . han honom thz ille lönte  RK 2: 3459 . - pass. thz kan thöm aldrigh vardha lönt  Iv 4959 . - med personens dat. och ack. betecknande det som gifves ss lön. honum löna synda giäl  Al 2329 . - med personens dat. them löne  RK 2: 3216 .  &quot; löna wäl jlum &quot; Bil 104 .  &quot; iak lönir hwariom enom äptir sinne forskullan &quot; Bir 1: 381 .  MB 2: 369 .  &quot; om honum skwlde saa wordhe lönth for hans langlige . . . trotieniste &quot; BSH 4: 220 ( 1497) . - löna, aflöna. them som ey löna sino ärfuodhis folke rättelica  MP 2: 111 .  &quot; löne . . . af thy sama sinom piltom oc tiänarom &quot; Bir 5: 115 .  ib 116 .  &quot; sinom soldenärom skulu the ey vara pliktoghe antiggia harnisk. kost äller fordenskap til land ällir watn. ey oc gull äller päninga til them at löna &quot; MB 2: 242 .  ib 243 . - betala. badh löna sik  Bo 14 . - belöna. war gudh ther badhe lönar wälgerninga ok plicta synde  Bil 458 . "
+            'löna, vedergälla. " med personens dat. och ack. betecknande det för hvilket lön gifves. minom och ack. betecknande det för hvilket lön gifves. minom winom lönir iak lydhno oc älskogha mz miskund " MB 1: 332 . hånom hans gif löna  KS 70 (112, 77) . gudh löne henne sin stora kärlek  Lg 807 .  KL 296 . han honom thz ille lönte  RK 2: 3459 . - pass. thz kan thöm aldrigh vardha lönt  Iv 4959 . - med personens dat. och ack. betecknande det som gifves ss lön. honum löna synda giäl  Al 2329 . - med personens dat. them löne  RK 2: 3216 .  " löna wäl jlum " Bil 104 .  " iak lönir hwariom enom äptir sinne forskullan " Bir 1: 381 .  MB 2: 369 .  " om honum skwlde saa wordhe lönth for hans langlige . . . trotieniste " BSH 4: 220 ( 1497) . - löna, aflöna. them som ey löna sino ärfuodhis folke rättelica  MP 2: 111 .  " löne . . . af thy sama sinom piltom oc tiänarom " Bir 5: 115 .  ib 116 .  " sinom soldenärom skulu the ey vara pliktoghe antiggia harnisk. kost äller fordenskap til land ällir watn. ey oc gull äller päninga til them at löna " MB 2: 242 .  ib 243 . - betala. badh löna sik  Bo 14 . - belöna. war gudh ther badhe lönar wälgerninga ok plicta synde  Bil 458 . '
         ],
         alternative_forms=[
             "lönar Bil 458 . ",
@@ -79,8 +84,9 @@ def test_dictionary_has_expected_content() -> None:
     )
     expected_40000 = DictionaryEntry(
         headword="välrotadher",
-        part_of_speech="",
+        part_of_speech=[],
         grammatical_aspect="",
+        information="p. adj. ",
         definitions=["väl rotad. välrodat trä  Bir 3: 61 ."],
         alternative_forms=["-rod- )"],
     )

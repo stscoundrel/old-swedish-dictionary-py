@@ -37,8 +37,9 @@ from old_swedish_dictionary.dictionary import DictionaryEntry
 
 {
     headword: str
-    part_of_speech: str
+    part_of_speech: list[str]
     grammatical_aspect: str
+    information: str
     definitions: list[str]
     alternative_forms: list[str]
 }
